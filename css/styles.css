@@ -12,8 +12,35 @@ body {
   background-color: var(--bg-color);
   font-size: 14px;
   color: var(--main-text-color);
+  box-sizing: border-box;
+  width: 1200px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav .nav-element + .nav-element {
+  margin-left: 50px;
+}
+.nav .nav-element:last-child {
+  margin-right: auto;
+}
+
+.adress-element + .adress-element {
+  margin-left: 50px;
+}
+
+.header .list {
+  display: flex;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -24,6 +51,7 @@ body {
 }
 
 .second_half {
+  margin-right: 93px;
   color: var(--headers-color);
 }
 
