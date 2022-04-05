@@ -110,6 +110,8 @@ body {
 }
 
 .hero {
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--dark-bg-color);
   text-align: center;
   font-family: var(--text-font-family);
@@ -140,6 +142,18 @@ body {
   border-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.flex-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pros-item + .pros-item,
+.image-item + .image-item {
+  margin-left: 30px;
 }
 
 .section_header {
@@ -222,6 +236,7 @@ body {
 
 .footer {
   padding-left: 15px;
+  padding-right: 15px;
   background-color: var(--dark-bg-color);
 }
 
