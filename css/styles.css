@@ -7,13 +7,25 @@
   --light-bg-color: #f5f4fa;
 }
 
+* ::after,
+::before {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   background-color: var(--bg-color);
   font-size: 14px;
   color: var(--main-text-color);
-  box-sizing: border-box;
-  width: 1200px;
+}
+
+.nav,
+.list,
+.crew_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .header {
@@ -30,17 +42,11 @@ body {
 .nav .nav-element + .nav-element {
   margin-left: 50px;
 }
-.nav .nav-element:last-child {
-  margin-right: auto;
-}
 
 .adress-element + .adress-element {
   margin-left: 50px;
 }
 
-.header .list {
-  display: flex;
-}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -56,13 +62,9 @@ body {
 }
 
 .second_half_footer {
+  display: block;
+  margin-bottom: 20px;
   color: var(--bg-color);
-}
-
-.list,
-.crew_list,
-.nav {
-  list-style-type: none;
 }
 
 .page_nav,
@@ -74,6 +76,12 @@ body {
   text-decoration: none;
 }
 
+.page_nav,
+.adress_link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .first_half,
 .activev {
   color: var(--accent-color);
@@ -88,6 +96,10 @@ body {
   text-decoration: none;
 }
 
+.header > .list {
+  display: flex;
+  margin-left: auto;
+}
 .page_nav:hover,
 .adress_link:hover,
 .page_nav:focus,
@@ -110,8 +122,14 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
 }
 .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   background-color: var(--accent-color);
@@ -119,6 +137,9 @@ body {
   cursor: pointer;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .section_header {
@@ -200,19 +221,36 @@ body {
 }
 
 .footer {
+  padding-left: 15px;
   background-color: var(--dark-bg-color);
 }
 
 .adress_location {
+  display: block;
+  padding: 0;
   color: var(--bg-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .adress_link_footer {
+  display: block;
+  margin-top: 9px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
