@@ -13,8 +13,8 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="list">
+        <ul class="adresses">
           <li class="adress-element">
             <a class="adress_link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -63,10 +63,10 @@
           <button class="btn" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="pros">
+      <section class="section">
         <div class="container">
           <h2 class="section_header visually-hidden">Наши преимущества</h2>
-          <ul class="list flex-list">
+          <ul class="advantages">
             <li class="pros-item">
               <h3 class="intro-paragraf">Внимание к деталям</h3>
               <p class="intro-text">
@@ -98,30 +98,41 @@
           </ul>
         </div>
       </section>
-      <section class="deeds">
+      <section class="section picures-section">
         <div class="container">
-          <h2 class="section_header">Чем мы занимаемся</h2>
-          <ul class="list flex-list">
-            <li class="image-item">
-              <img src="images/tech_1.jpg" alt="кодинг" width="370" />
-            </li>
-            <li class="image-item">
+          <h2 class="section_header pictures-header">Чем мы занимаемся</h2>
+          <ul class="pictures-list">
+            <li class="picture-item">
               <img
+                class="picture"
+                src="images/tech_1.jpg"
+                alt="кодинг"
+                width="370"
+              />
+            </li>
+            <li class="picture-item">
+              <img
+                class="picture"
                 src="images/tech_2.jpg"
                 alt="розкладка контента"
                 width="370"
               />
             </li>
-            <li class="image-item">
-              <img src="images/tech_3.jpg" alt="выбор цвета" width="370" />
+            <li class="picture-item">
+              <img
+                class="picture"
+                src="images/tech_3.jpg"
+                alt="выбор цвета"
+                width="370"
+              />
             </li>
           </ul>
         </div>
       </section>
-      <section class="alt_section">
+      <section class="section light-bg-section">
         <div class="container">
-          <h2 class="section_header">Наша команда</h2>
-          <ul class="crew_list flex-list">
+          <h2 class="section_header light-bg-header">Наша команда</h2>
+          <ul class="crew_list">
             <li class="crew_el">
               <img
                 class="image"
@@ -180,7 +191,7 @@
           ><span class="logo first_half">Web</span>Studio</a
         >
         <address>
-          <ul class="list">
+          <ul class="footer-list">
             <li class="footer-el">
               <a
                 class="adress_link adress_location"
